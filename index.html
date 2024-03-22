@@ -10,12 +10,13 @@
        font-family: Verdana, Arial, sans-serif;
    }
    textarea {
-       width: 90%;
-       height: 200px;
+       width: 60%;
+       height: 650px;
    }
    button {
        display: block;
        margin-top: 20px;
+       margin-bottom: 20px;
    }
 </style>
 <script>
@@ -27,7 +28,7 @@ function removeLineBreaks() {
 </head>
 <body>
 <h2>Remove Line Breaks from Text</h2>
+<button onclick="removeLineBreaks()">Break!</button>
 <textarea id="editingArea"></textarea>
-<button onclick="removeLineBreaks()">Remove Line Breaks</button>
 </body>
 </html>
