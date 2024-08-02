@@ -21,14 +21,17 @@
 </style>
 <script>
 function removeLineBreaks() {
-   var textarea = document.getElementById('editingArea');
-   textarea.value = textarea.value.replace(/(\r\n|\n|\r)/gm, " ");
+    var textarea = document.getElementById('editingArea');
+    textarea.value = textarea.value.replace(/(\r\n|\n|\r)/gm, " ");
+
+    textarea.select();
+    document.execCommand('copy');
 }
 </script>
 </head>
 <body>
 <h2>Remove Line Breaks from Text</h2>
-<button onclick="removeLineBreaks()">Break!</button>
+<button onclick="removeLineBreaks()">Break & Copy!</button>
 <textarea id="editingArea"></textarea>
 </body>
 </html>
